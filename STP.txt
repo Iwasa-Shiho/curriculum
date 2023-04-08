@@ -15,31 +15,30 @@ Switch3
 
 回答
 ルートパスコストはそれぞれ
-switch1-switch3：19
-switch1-switch2-switch4-switch3：19+19+100=138
+switch1のF0/2：19
+switch1のF0/1：19+19+100=138
 
-switch2-switch1-Switch3：19+19=38
-switch2-switch4-switch3：19+100=119
+switch2のF0/1：19+19=38
+switch2のF0/2：19+100=119
 
-switch4-switch3：100
-switch4-switch2-switch1-switch3：100+19+19=138
+switch4のE0/2：100
+switch4のE0/1：100+19+19=138
 のため
 
 ・ルートポート
-switch1-switch3
-switch2-switch1
-switch4-switch3
+switch1のF0/2
+switch2のF0/1
+switch4のE0/2
 
 ・指定ポート
 ルートブリッジの全てのポートは必ず指定ポートになるので
-switch3-switch1
-switch3-switch4
+switch3のE0/1
+switch3のE0/2
 ルートポートの対向ポートは必ず指定ポートになるので上記以外のものは
-switch1-switch2
+switch1のF0/1
 またルートパスコストが小さいBPDUを送信するポートが指定ポートのため
-switch2-switch4
+switch2のF0/2
 
 ・ブロッキングポート
 ルートポート、指定ポートのどちらにも選出されなかったポートのため
-switch4-switch2
-
+switch4のE0/1
